@@ -12,7 +12,7 @@
 (require 'init-ivy) ;; emacs通用命令补全
 (require 'init-swiper) ;; 搜索
 (require 'init-auto-complete) ;;自动补全
-(require 'init-go-mode.el) ;; golang设置
+(require 'init-go-mode) ;; golang设置
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -21,7 +21,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (ibuffer-projectile projectile gnu-elpa-keyring-update fullframe seq))))
+    (ivy-xref swiper diminish counsel ivy-rich ivy ibuffer-projectile projectile gnu-elpa-keyring-update fullframe seq))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

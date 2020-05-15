@@ -1,5 +1,5 @@
 ;; init-go-mode.el
-(add-to-list 'load-path "~/go/src/github.com/dougm/goflymake")
+(add-to-list 'load-path "~/workspace/go/src/github.com/dougm/goflymake")
 (require 'go-flymake)
 (require 'go-autocomplete)
 (require 'auto-complete-config)
@@ -13,3 +13,5 @@
 
 ;; go fmt
 (add-hook 'before-save-hook 'gofmt-before-save)
+
+(provide 'init-go-mode)

@@ -1,1 +1,1 @@
-("~/imac/workspace/corp/qrcode-go/")
+("~/.emacs.d/")
