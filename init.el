@@ -4,6 +4,10 @@
     (expand-file-name "lisp" user-emacs-directory))
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
                          ("melpa" . "https://melpa.org/packages/")))
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+
 
 (require 'init-elpa)    ;; 加载ELPA，并定义了require-package函数
 (require 'init-utils) ;; 函数定义文件
@@ -14,6 +18,7 @@
 (require 'init-auto-complete) ;;自动补全
 (require 'init-go-mode) ;; golang设置
 (require 'init-php-mode) ;; php设置
+(require 'init-magit) ;;git设置
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -22,7 +27,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (spaceline-all-the-icons ivy-xref swiper diminish counsel ivy-rich ivy ibuffer-projectile projectile gnu-elpa-keyring-update fullframe seq helm-ag dockerfile-mode php-mode zerodark-theme))))
+    (gitconfig-mode gitignore-mode git-blamed ivy-xref swiper diminish counsel ivy-rich ivy ibuffer-projectile projectile gnu-elpa-keyring-update fullframe seq auto-package-update vdiff-magit spaceline-all-the-icons helm-ag dockerfile-mode php-mode zerodark-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
