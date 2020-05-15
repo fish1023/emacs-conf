@@ -1,5 +1,8 @@
 ;; init-go-mode.el
-(add-to-list 'load-path "~/workspace/go/src/github.com/dougm/goflymake")
+(when (file-exists-p "~/workspace/go/src/github.com/dougm/goflymake")
+  (add-to-list 'load-path "~/workspace/go/src/github.com/dougm/goflymake"))
+(when (file-exists-p "~/go/src/github.com/dougm/goflymake")
+    (add-to-list 'load-path  "~/go/src/github.com/dougm/goflymake"))
 (require 'go-flymake)
 (require 'go-autocomplete)
 (require 'auto-complete-config)

@@ -76,6 +76,10 @@
         (error "Cannot open tramp file")
       (browse-url (concat "file://" file-name)))))
 
+(defun add-to-load-path-if-exits (dir)
+  (when (file-exists-p dir)
+    (add-to-load-path dir)))
+
 
 (provide 'init-utils)
 ;;; init-utils.el ends here

@@ -18,7 +18,7 @@
 (require 'init-auto-complete) ;;自动补全
 (require 'init-go-mode) ;; golang设置
 (require 'init-php-mode) ;; php设置
-(require 'init-magit) ;;git设置
+;;(require 'init-magit) ;;git设置
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -27,7 +27,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (gitconfig-mode gitignore-mode git-blamed ivy-xref swiper diminish counsel ivy-rich ivy ibuffer-projectile projectile gnu-elpa-keyring-update fullframe seq auto-package-update vdiff-magit spaceline-all-the-icons helm-ag dockerfile-mode php-mode zerodark-theme))))
+    (ivy-xref swiper diminish counsel ivy-rich ivy ibuffer-projectile projectile gnu-elpa-keyring-update fullframe seq gitconfig-mode gitignore-mode git-blamed auto-package-update vdiff-magit spaceline-all-the-icons helm-ag dockerfile-mode php-mode zerodark-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
