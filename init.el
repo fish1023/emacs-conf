@@ -4,6 +4,10 @@
     (expand-file-name "lisp" user-emacs-directory))
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
                          ("melpa" . "https://melpa.org/packages/")))
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+
 
 (require 'init-elpa)    ;; 加载ELPA，并定义了require-package函数
 (require 'init-utils) ;; 函数定义文件
@@ -22,7 +26,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (spaceline-all-the-icons ivy-xref swiper diminish counsel ivy-rich ivy ibuffer-projectile projectile gnu-elpa-keyring-update fullframe seq helm-ag dockerfile-mode php-mode zerodark-theme))))
+    (auto-package-update vdiff-magit spaceline-all-the-icons ivy-xref swiper diminish counsel ivy-rich ivy ibuffer-projectile projectile gnu-elpa-keyring-update fullframe seq helm-ag dockerfile-mode php-mode zerodark-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
