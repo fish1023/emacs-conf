@@ -1,1 +1,1 @@
-("~/.emacs.d/")
+("~/workspace/qrcode-go/" "~/.emacs.d/" "~/workspace/bingo/")

@@ -37,5 +37,10 @@
 (global-set-key (kbd "C-o") 'query-replace)
 ;; (global-set-key [f4] 'helm-projectile-ag)
 
+;; 主题
+(load-theme 'zerodark t)
+;; Optionally setup the modeline
+(zerodark-setup-modeline-format)
+
 (provide 'init-common)
 ;;; init-ivy.el ends here
