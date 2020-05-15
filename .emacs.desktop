@@ -1,0 +1,103 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu May 14 17:37:17 2020
+;; Desktop file format version 208
+;; Emacs version 26.3
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (24253 4429 7790 0) (desktop . "208") "yushang@yushang-test.local" nil nil ((((minibuffer . t) (tty-type . "screen-256color") (tty . "/dev/tty") (display-type . color) (background-mode . dark) (foreground-color . "white smoke") (background-color . "gray20") (font . "tty") (height . 64) (width . 272) (modeline . t) (unsplittable) (menu-bar-lines . 0) (frameset--id . "50DD-826D-A9FF-A86F") (frameset--mini t)) ((min-height . 4) (min-width . 20) (min-height-ignore . 3) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 4) (min-pixel-width . 20) (min-pixel-height-ignore . 3) (min-pixel-width-ignore . 4) (min-pixel-height-safe . 1) (min-pixel-width-safe . 4)) hc (pixel-width . 272) (pixel-height . 63) (total-width . 272) (total-height . 63) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 136) (pixel-height . 63) (total-width . 136) (total-height . 63) (normal-height . 1.0) (normal-width . 0.5) (buffer "*Customize Option: Package Archives*" (selected . t) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 336) (start . 1))) (leaf (last . t) (pixel-width . 136) (pixel-height . 63) (total-width . 136) (total-height . 63) (normal-height . 1.0) (normal-width . 0.5) (buffer "*Packages*" (selected) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 143751) (start . 140961)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("projectile" "projectilen" "go-mode" "flycheck" ".emacs" "projectile"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs.d" "~/.emacs.d/init.el" "~/.emacs.d2/" "~/.emacs.d2/init.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/yushang/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(eldoc-mode)
+  115
+  '(115 nil)
+  nil
+  nil
+  '((buffer-display-time 24253 4391 136498 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (115 115 115 115 115 115 115 115 115 115 115 115 115 115 652 652))))
+
+(desktop-create-buffer 208
+  "/Users/yushang/.emacs.d2/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(eldoc-mode)
+  9097
+  '(8924 nil)
+  nil
+  nil
+  '((buffer-display-time 24253 1261 907448 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (8228 7940 7076 7257 4867 1538 1446))))
+
+(desktop-create-buffer 208
+  nil
+  ".emacs.d"
+  'dired-mode
+  nil
+  181
+  '(nil nil)
+  t
+  '("/Users/yushang/.emacs.d/")
+  '((buffer-display-time 24253 447 334637 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "elpa"
+  'dired-mode
+  nil
+  182
+  '(nil nil)
+  t
+  '("/Users/yushang/.emacs.d/elpa/")
+  '((buffer-display-time 24253 358 183951 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "auto-save-list"
+  'dired-mode
+  nil
+  190
+  '(nil nil)
+  t
+  '("/Users/yushang/.emacs.d/auto-save-list/")
+  '((buffer-display-time 24253 356 218997 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "yushang"
+  'dired-mode
+  nil
+  1710
+  '(308 nil)
+  t
+  '("/Users/yushang/")
+  '((buffer-display-time 24253 348 957549 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  ".emacs.d2"
+  'dired-mode
+  nil
+  244
+  '(nil nil)
+  t
+  '("/Users/yushang/.emacs.d2/")
+  '((buffer-display-time 24253 343 198807 0))
+  '((mark-ring nil)))
+
