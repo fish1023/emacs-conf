@@ -1,6 +1,4 @@
 ;; init-common
-
-
 ;; yes/no to y/n
 (fset 'yes-or-no-p'y-or-n-p)
 ;;隐藏菜单栏
@@ -19,9 +17,22 @@
 (setq make-backup-files nil)
 
 ;; 设置缩进
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
-(setq tab-stop-list (number-sequence 4 200 4))
+;; (setq-default indent-tabs-mode nil)
+;; (setq-default tab-width 4)
+;; (setq tab-stop-list (number-sequence 4 200 4))
+(add-hook 'go-mode-hook
+          (lambda ()
+            (add-hook 'before-save-hook 'gofmt-before-save)
+            (setq tab-width 4)
+            (setq indent-tabs-mode 1)))
+
+(setq mweb-tags
+      '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
+        (js-mode  "<script[^>]*>" "</script>")
+        (css-mode "<style[^>]*>" "</style>")))
+(setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5"))
+(multi-web-global-mode 1)
+(add-to-list 'auto-mode-alist '("\\.vue?\\'" . web-mode))
 
 ;;重新加载配置文件
 (global-set-key [F5] 'Load-File)
@@ -43,14 +54,6 @@
 (zerodark-setup-modeline-format)
 
 
-;; copy region or whole line(global-set-key "\M-w"
-(defun duplicate-line()
-  (interactive)
-  (move-beginning-of-line 1)
-  (kill-line)
-  (yank)
-  )
-(global-set-key (kbd"M-w") 'duplicate-line)
 
 (provide 'init-common)
 ;;; init-ivy.el ends here
