@@ -49,10 +49,14 @@
 (global-set-key [f4] 'helm-projectile-grep)
 
 ;; 主题
-(load-theme 'zerodark t)
-;; Optionally setup the modeline
-(zerodark-setup-modeline-format)
+;; (load-theme 'spacemacs-dark t)
 
+(global-hl-line-mode t)
+(set-face-attribute hl-line-face nil :underline t)
+(set-face-background 'highlight nil)
+;; (set-face-attribute 'default nil :foreground "#C7EDCC")
+;; (set-face-attribute 'cursor nil :background "#000000")
+;; (set-face-attribute 'font-lock-comment-face nil :foreground "#888888" :background "#292b2e")
 
 
 (provide 'init-common)
