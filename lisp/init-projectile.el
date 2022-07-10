@@ -1,4 +1,8 @@
 ;;; init projectile.el
+(use-package projectile
+  :ensure t)
+(use-package helm-projectile
+  :ensure t)
 
 (when (maybe-require-package 'projectile)
   (add-hook 'after-init-hook 'projectile-mode)
@@ -17,7 +21,6 @@
   (maybe-require-package 'ibuffer-projectile))
 
 ;; (setq helm-projectile-fuzzy-match nil)
-(require 'helm-projectile)
 (helm-projectile-on)
 
 (provide 'init-projectile)
